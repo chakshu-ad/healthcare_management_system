@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Apex Hospital</title>
+  <link rel="icon" type="image/x-png" href="./img/logo.png" height="48px" width="48px">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="./css/slidebutton.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8ce335f9b0.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="css/animate.css" class="css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="css/parallax.js"></script>
+  <script src="https://kit.fontawesome.com/8ce335f9b0.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="./navbar.js" crossorigin="anonymous"></script>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./navbar.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+  <style>
+    
+    body {
+      font-family: 'Quicksand', sans-serif;
+      height: auto;
+      width: 100vw;
+      display: block;
+      position: relative;
+    }
+
+    body h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .move {
+      margin-top: 71px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .container-cp {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .container-cp img {
+      margin-bottom: 10px;
+    }
+
+    .container-cp h1 {
+      margin-bottom: 15px;
+    }
+
+    .container-cp p {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .parallax {
+      height: 500px;
+
+
+
+    }
+
+    .parallax-window {
+      min-height: 400px;
+      background: transparent;
+      text-align: center;
+      padding: 200px;
+      color: white;
+      padding: 160px;
+
+    }
+
+    .content {
+      text-align: center;
+      margin: 25px;
+      padding: 50px;
+
+    }
+
+    .content h1 {
+      margin-top: 50px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      height: 70px;
+      background: lightslategray;
+      padding: 20px 50px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    .right {
+      float: right;
+      color: white;
+    }
+
+    @media(max-width:768px) {
+      .parallax-window {
+        padding: 60px;
+      }
+
+      .parallax-window h1 {
+        font-size: 20px;
+        margin-top: 25%;
+
+      }
+    }
+
+    .red {
+      color: rgb(24, 94, 10);
+      font-family: 'sans-serif', cursive;
+    }
+
+    .button {
+      border-radius: 50px;
+    }
+
+    .font {
+
+      font-family: 'Dela Gothic One', cursive;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .chat-popup {
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      bottom: 0;
+      right: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    body {
+      background: #e1ecf2;
+    }
+
+    .wrapper {
+      z-index: 2;
+      margin: 10px;
+      width: 120px;
+      display: flex;
+    }
+
+    .wrapper .top_navbar {
+      width: calc(100% - 20px);
+      height: 60px;
+      z-index: 2;
+      display: flex;
+      position: fixed;
+      overflow: hidden;
+      top: 10px;
+    }
+
+    .wrapper .top_navbar .hamburger {
+      z-index: 0;
+      width: 70px;
+      height: 100%;
+      background: #2e4ead;
+      padding: 15px 17px;
+      border-top-left-radius: 20px;
+      cursor: pointer;
+    }
+
+    .wrapper .top_navbar .hamburger div {
+      z-index: 0;
+      width: 35px;
+      height: 4px;
+      background: #92a6e2;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    .wrapper .top_navbar .top_menu {
+      z-index: 0;
+      width: calc(100% - 70px);
+      height: 100%;
+      background: #fff;
+      border-top-right-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrapper .top_navbar .top_menu .logo {
+      z-index: 0;
+      color: #2e4ead;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .wrapper .top_navbar .top_menu ul {
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
+    }
+
+    .wrapper .top_navbar .top_menu ul li a {
+      z-index: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
+      margin: 0 10px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border: 1px solid #2e4ead;
+      border-radius: 50%;
+      color: #2e4ead;
+    }
+
+    .wrapper .top_navbar .top_menu ul li a:hover {
+      background: #4360b5;
+      z-index: 0;
+      color: #fff;
+    }
+
+    .wrapper .top_navbar .top_menu ul li a:hover i {
+      color: #fff;
+      z-index: 0;
+    }
+
+    .wrapper .sidebar {
+      display: flex;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 80px;
+      left: 1%;
+      background: #2e4ead;
+      width: 230px;
+      height: 120px;
+      margin-left: -0.5%;
+      margin-right: 130px;
+      height: calc(100% - 80px);
+      border-bottom-left-radius: 20px;
+      transition: all 0.3s ease;
+      padding-bottom: 10%;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .wrapper .sidebar ul li a {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      color: #fff;
+      position: relative;
+      margin-bottom: 1px;
+      margin-left: 0px;
+      padding-left: 0px;
+      color: #92a6e2;
+      white-space: nowrap;
+      margin-left: -9%;
+    }
+
+    .wrapper .sidebar ul li a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: #92a6e2;
+      display: none;
+      margin-left: -9%;
+    }
+
+    .wrapper .sidebar ul li a span.icon {
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .wrapper .sidebar ul li a span.title {
+      display: inline-block;
+    }
+
+    .wrapper .sidebar ul li a:hover,
+    .wrapper .sidebar ul li a.active {
+      background: #4360b5;
+      color: #fff;
+      margin-left: -0.5%;
+    }
+
+    .wrapper .sidebar ul li a:hover:before,
+    .wrapper .sidebar ul li a.active:before {
+      display: inline-block;
+      margin-left: -0.5%;
+    }
+
+    .wrapper .main_container {
+      width: calc(100%-70px);
+      margin-top: 70px;
+      margin-left: 200px;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .wrapper .main_container .item {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 15px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .wrapper.collapse .sidebar {
+      width: 73px;
+    }
+
+    .wrapper.collapse .sidebar ul li a {
+      text-align: center;
+    }
+
+    .wrapper.collapse .sidebar ul li a span.icon {
+      margin: 0;
+    }
+
+    .wrapper.collapse .sidebar ul li a span.title {
+      display: none;
+    }
+
+    .wrapper.collapse .main_container {
+      width:calc (100% - 70px);
+      margin-left: 70px;
+    }
+
+    .carousel-inner {
+      width: 1620px;
+      height: 800px;
+      object-fit: contain;
+      display: flex;
+      margin-top: 3.5%;
+      margin-bottom: 10%;
+      position: absolute;
+      flex-wrap: wrap;
+      flex-shrink: 1;
+
+
+    }
+
+
+    .container {
+      margin-top: 30px;
+      width: 880px;
+      height: auto;
+      position: relative;
+      left: 250px;
+      display: flexbox;
+      flex-shrink: 1;
+    }
+
+    a[role="button"] {
+      position: relative;
+      left: 100px;
+    }
+
+    .nnext {
+      margin-top: 200%;
+      width: 500%;
+
+    }
+    .single-footer-widget h3{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    }
+
+    *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.futt{
+  color: aliceblue;
+  text-align: left;
+}
+h3{
+  margin-left: 40px;
+  text-align: left;
+}
+.footer-area {
+    background-color: #060f1e;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    overflow: hidden;
+    width: 1620px;
+    height: auto;
+    margin-top: 220px;
+    bottom: 0px;
+}
+.foot-pd {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+section {
+    display: inline-block !important;
+}
+
+ul {
+    display: block;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li{
+  text-align: left;
+}
+
+
+.single-footer-widget 
+.footer-social i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #207ef7;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 16px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+a:active{
+  text-decoration: none;
+  color: rgb(198, 201, 204);
+}
+
+a:link{
+  text-decoration: none;
+  color: rgb(198, 201, 204);
+}
+
+a:visited
+{
+  text-decoration: none;
+  color: rgb(198, 201, 204);
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+    z-index: -1;
+}
+.lines .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 24%;
+    background: rgba(255, 255, 255, .1);
+    overflow: hidden;
+}
+
+.lines .line1 {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 48%;
+    background: rgba(255, 255, 255, .1);
+    overflow: hidden;
+}
+
+.lines .line2 {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 72%;
+    background: rgba(255, 255, 255, .1);
+    overflow: hidden;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/12a077e593.js"></script>
+
+  <div class="wrapper">
+
+    <div class="top_navbar">
+      <div class="hamburger">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <div class="top_menu">
+        <div class="logo">
+          Apex Hospitals
+        </div>
+
+        <ul>
+          <li class="login">Sign Up/Sign In</li>
+          <li><a href="signin-up.html">
+              <i class="fas fa-user"></i>
+            </a></li>
+          <li><a href="admin.html">
+              <i class="fas fa-newspaper"></i>
+            </a></li>
+          <li><a href="about us.html">
+              <i class="fas fa-building"></i>
+            </a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#" class="active">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title">Home</span>
+          </a></li>
+        <li><a href="bmic.html">
+            <span class="icon"><i class="fas fa-stethoscope"></i></span>
+            <span class="title">BMI</span>
+          </a></li>
+        <li><a href="bed.html">
+            <span class="icon"><i class="fas fa-bed"></i></span>
+            <span class="title">Bed</span>
+          </a></li>
+        <li><a href="admin.html">
+            <span class="icon"><i class="fas fa-newspaper"></i></span>
+            <span class="title">Dashboard</span>
+          </a></li>
+        <li><a href="oxygen.html">
+            <span class="icon"><i class="fas fa-bottle-droplet"></i></span>
+            <span class="title">Oxygen</span>
+          </a></li>
+        <li><a href="vaccinetable.html">
+            <span class="icon"><i class="fas fa-hospital"></i></span>
+            <span class="title">Vaccine Availibility</span>
+          </a></li>
+        <li><a href="vaccine.html">
+            <span class="icon"><i class="fas fa-syringe"></i></span>
+            <span class="title">Vaccine Booking</span>
+          </a></li>
+        <li><a href="https://www.cowin.gov.in">
+            <span class="icon"><i class="fas fa-syringe"></i></span>
+            <span class="title">Vaccine</span>
+          </a></li>
+        <li><a href="about us.html">
+            <span class="icon"><i class="fas fa-building"></i></span>
+            <span class="title">About Us</span>
+          </a></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+
+      </ul>
+    </div>
+    <div class="container">
+      <span id="carouselExampleControls" class="carousel-slide-move" data-ride="carousel">
+        <span class="carousel-inner">
+          <span class="carousel-item active">
+            <img class="d-block" src="images/image1.jpg" alt="First slide">
+          </span>
+          <span class="carousel-item">
+            <img class="d-block" src="images/image2.jpg" alt="Second slide">
+          </span>
+          <span class="carousel-item">
+            <img class="d-block" src="images/image3.jpg" alt="Third slide">
+          </span>
+          <span class="carousel-item">
+            <img class="d-block" src="images/vision.jpeg" alt="Fourth slide">
+          </span>
+        </span>
+        
+      <!--end of slides-->
+      <script>
+      $(".hamburger").click(function(){
+        $(".wrapper").toggleClass("collapse");
+     });
+     </script>
+
+      <div class="elfsight-app-9dbb0560-e954-4e18-82f9-5fb6eeef8428"></div>
+      <span class="container-cp">
+        <span class="row">
+          <span class="col-lg-4">
+
+            <div class="slider">
+              <img
+                src="https://i1.himalayas.life/c/u/f67894297b6134a6b759b3a9ec15b6cb/2020/08/30050033/Hatha-Yoga-Practice.jpg"
+                alt="Yoga Campaign">
+              <br><a href="https://www.who.int/initiatives/behealthy/who-myoga-app" target="_blank"><button
+                  class="btn">Join Yoga Campaign</button></a>
+            </div>
+
+            <div class="slider1">
+              <img
+                src="https://149937275.v2.pressablecdn.com/wp-content/uploads/2021/09/hub-nutritionist-meeting-with-patient-1200x628-1.jpg"
+                alt="Nutritionist" id="img1">
+              <br><a
+                href="https://www.practo.com/jaipur/therapist/archana-jain-1-dietitian-nutritionist?practice_id=844572&specialization=Dietitian/Nutritionist&referrer=doctor_listing"
+                target="_blank"><button class="btn" id="btn1">Get Balanced Diet</button></a>
+            </div>
+
+            <div class="slider1">
+              <img src="https://www.apa.org/images/article-understanding_tcm7-285067.jpg" alt="Psychotherapist" id="img2">
+              <br><a
+                href="https://www.practo.com/jaipur/therapist/nimisha-gupta-psychologist-1?practice_id=1375769&specialization=Psychologist&referrer=doctor_listing"
+                target="_blank"><button class="btn" id="btn2">Bad Mental Health! Consult Now</button></a>
+            </div>
+
+
+            <div class="slider1">
+              <img src="https://medlineplus.gov/images/Talkingwithyourdoctor_share.jpg" alt="Doctors" id="img3">
+              <br><a href="https://www.apexhospitals.com/apex-doctors" target="_blank"><button class="btn" id="btn3">Consult with
+                  our Experts</button></a>
+            </div>
+
+            <div class="slider1">
+              <img src="https://images.indianexpress.com/2022/04/GettyImages-yoga-1200.jpg" alt="Yoga Classes" id="img4">
+              <br><a href="https://www.healthline.com/nutrition/12-benefits-of-meditation" target="_blank"><button
+                  class="btn" id="btn4">Benefits of Meditation</button></a>
+            </div>
+          </span>
+
+            <section class="footer-area foot-pd">
+              <div class="container-fluid">
+                <div class="row marto">
+
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget pl-5">
+                      <h3>About Apex</h3>
+                      <ul class="footer-quick-links">
+                        <li><a href="https://www.apexhospitals.com/about-apex">About Us</a></li>
+                        <li><a href="https://www.apexhospitals.com/apex-doctors"> Our Doctor</a></li>
+                        <li><a href="https://www.apexhospitals.com/malviya-nagar">Malviya Nagar</a></li>
+                        <li><a href="https://www.apexhospitals.com/mansarovar">Mansarovar</a></li>
+                        <li><a href="https://www.apexhospitals.com/sawai-madhopur">Sawai Madhopur </a></li>
+                        <li><a href="https://www.apexhospitals.com/jhunjhunu">Jhunjhunu </a> </li>
+                        <li><a href="https://www.apexhospitals.com/bikaner">Bikaner </a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget pl-5 sinpt">
+                      <h3>Apex Gallery</h3>
+                      <ul class="footer-quick-links">
+                        <li><a href="https://www.apexhospitals.com/why-choose-us"> Why Choose Us</a></li>
+                        <li><a href="https://www.apexhospitals.com/our-blogs">Our Blogs</a></li>
+                        <li><a href="https://www.apexhospitals.com/our-gallery">Our Gallery</a></li>
+                        <li><a href="https://www.apexhospitals.com/our-events">Our Events</a></li>
+                        <li><a href="https://www.apexhospitals.com/media"> News &amp; Media</a> </li>
+                        <li><a href="https://www.apexhospitals.com/contactus"> Contact Us</a> </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget pl-5 sinpt">
+                      <h3>Quick Links</h3>
+                      <ul class="footer-quick-links">
+
+                        <li><a href="https://www.apexhospitals.com/rights-and-responsbilities">Rights &amp;
+                            Responsbilities</a></li>
+                        <li><a href="https://www.apexhospitals.com/policy">Policy</a></li>
+                        <li><a href="https://www.apexhospitals.com/career">Career</a></li>
+                        <li><a href="https://www.apexhospitals.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://www.apexhospitals.com/terms-condition">Terms And Condition</a></li>
+                        <li> <a href="feedback-or-suggestions"> Feedback &amp; Suggestions</a></li>
+                        <!--<li> <a target="_blank" href="http://apexhospitals.com/walkathon-registration-apex-hospitals/"> Walkathon Registration</a></li>-->
+
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget">
+                      <h3>Connect with us</h3>
+                      <h6 style="color:#fff;" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apex Hospitals Private Limited</h6>
+
+                      <ul class="footer-quick-links">
+                        <li style="color:#fff;">Email : <a href="mailto:care@apexhospitals.com"> care@apexhospitals.com
+                          </a> </li>
+                        <li style="color:#fff;">Enquiry No : <a href="tel:+919829030011"> +919829030011 </a>
+                        <li style="color:#fff;">Emergency No : <a href="tel:0141-4101122"> 0141-4101122 </a> </li>
+                        <li style="color:#fff;">Ambulance No : <a href="tel:0141-410-1108"> 0141-410-1108 </a> </li>
+                      </ul>
+
+                      <ul class="footer-social">
+                        <li>
+                          <a href="https://www.facebook.com/ApexHospitals/" target="blank_"> <i
+                              class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                         <a href="https://www.youtube.com/channel/UC1ZcX1bJM5ywXRMiCS7jtXQ" target="blank_"> <i
+                              class="fab fa-youtube" aria-hidden="true"></i></a>
+                         <a href="https://www.instagram.com/apex.hospitals/?hl=en" target="blank_">
+                            <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                         <a href="https://twitter.com/apex_hospitals" target="blank_"> <i class="fab fa-twitter"
+                              aria-hidden="true"></i></a>
+                         <a href="https://www.linkedin.com/company/apexhospitals" target="blank_"> <i
+                              class="fab fa-linkedin" aria-hidden="true"></i> </a></li>
+
+                      </ul>
+                      <p></p>
+                      <ul class="footer-social">
+
+                        <p class="futt"> Download Our Tele Consultation App </p>
+                        <li> <a href="https://apps.apple.com/us/app/apex-hospitals/id1566699843?ign-mpt=uo%3D2"
+                            target="blank_"> <img
+                              src="https://www.apexhospitals.com/assets/images/resources/home/foot/appstore.png"> </a>
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.apexhospital" target="blank_">
+                            <img src="https://www.apexhospitals.com/assets/images/resources/home/foot/ggogleplay.png">
+                          </a> </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="lines">
+
+                <div class="line"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+              </div>
+
+            </section>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>
